@@ -36,5 +36,5 @@ RUN pip3 install ansible
 RUN npm install -g autocannon
 
 # tail for /tmp/log
-RUN touch /tmp/log && \
-  tail -f /tmp/log
+RUN touch /tmp/log
+CMD tail -f /tmp/log
