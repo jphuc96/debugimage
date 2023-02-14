@@ -38,6 +38,9 @@ RUN npm install -g autocannon
 # install speedtest-cli
 RUN pip3 install speedtest-cli
 
+# install sysbench
+RUN apt install -y sysbench
+
 # tail for /tmp/log
 RUN touch /tmp/log
 CMD tail -f /tmp/log
