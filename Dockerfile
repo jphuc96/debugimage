@@ -35,6 +35,9 @@ RUN pip3 install ansible
 # install autocannon
 RUN npm install -g autocannon
 
+# install speedtest-cli
+RUN pip3 install speedtest-cli
+
 # tail for /tmp/log
 RUN touch /tmp/log
 CMD tail -f /tmp/log
