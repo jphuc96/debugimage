@@ -8,7 +8,11 @@ RUN apt update && apt install -y \
   npm \
   iputils-ping \
   net-tools \
-  curl
+  curl \ 
+  redis-tools \
+  netcat \
+  telnet \
+  dnsutils
 
 # install gcloud cli
 RUN apt install -y apt-transport-https ca-certificates gnupg && \
