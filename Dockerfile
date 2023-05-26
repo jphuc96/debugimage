@@ -12,7 +12,8 @@ RUN apt update && apt install -y \
   redis-tools \
   netcat \
   telnet \
-  dnsutils
+  dnsutils \
+  vim
 
 # install gcloud cli
 RUN apt install -y apt-transport-https ca-certificates gnupg && \
